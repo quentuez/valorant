@@ -1,0 +1,13 @@
+@import "./variables.scss";
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: $grey-700;
+    font-family: $primary-font;
+}
+
+* {
+    box-sizing: border-box;
+}
