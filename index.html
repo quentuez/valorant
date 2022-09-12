@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Проект создан на базе макета https://www.figma.com/file/mc4NyQ8AYUV7KjImsy5cVY -->
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         /*  sass --watch .:. */
-        @import "fonts/Druk-Wide.css";
-        @import "fonts/Montserrat.css";
+        @import "fonts/drukWide/drukWide.css";
+        @import "fonts/montserrat/Montserrat.css";
         @import "styles/globals.css";
     </style>
     <title>
@@ -16,9 +17,100 @@
 </head>
 
 <body>
-    <h1>
-        Hello
-    </h1>
-</body>
+    <div>
+        <object data="./components/logos/figma.svg"></object>
+        <p>Free files</p>
+    </div>
 
+    <header>
+        <object data="./components/logos/riotGames.svg"></object>
+        <object data="./components/logos/valorant.svg"></object>
+        <nav>
+            <ul>
+                <li><a href="#">Game</a></li>
+                <li><a href="#">Champions</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Patch notes</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Esports</a></li>
+                <li><a href="#">Universe</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </nav>
+        <div>
+            <img />
+            <span>Unepicked</span>
+        </div>
+    </header>
+
+    <main>
+        <h1>Agents</h1>
+
+        <div>
+            <h2>Phoenix</h2>
+            <h3>United Kingdom</h3>
+            <img src="./components/agents/profile/phoenix.png" />
+            <div>
+                <object data="./components/agents/abilities/phoenix/firstAbility.svg"></object>
+                <object data="./components/agents/abilities/phoenix/secondAbility.svg"></object>
+                <object data="./components/agents/abilities/phoenix/thirdAbility.svg"></object>
+                <object data="./components/agents/abilities/phoenix/fourthAbility.svg"></object>
+            </div>
+        </div>
+        <div>
+            <h2>Jett</h2>
+            <h3>South Korea</h3>
+            <img src="./components/agents/profile/jett.png" />
+            <div>
+                <object data="./components/agents/abilities/jett/firstAbility.svg"></object>
+                <object data="./components/agents/abilities/jett/secondAbility.svg"></object>
+                <object data="./components/agents/abilities/jett/thirdAbility.svg"></object>
+                <object data="./components/agents/abilities/jett/fourthAbility.svg"></object>
+            </div>
+        </div>
+        <div>
+            <h2>Sova</h2>
+            <h3>Russia</h3>
+            <img src="./components/agents/profile/sova.png" />
+            <div>
+                <object data="./components/agents/abilities/sova/firstAbility.svg"></object>
+                <object data="./components/agents/abilities/sova/secondAbility.svg"></object>
+                <object data="./components/agents/abilities/sova/thirdAbility.svg"></object>
+                <object data="./components/agents/abilities/sova/fourthAbility.svg"></object>
+            </div>
+        </div>
+        <div>
+            <h2>Sage</h2>
+            <h3>China</h3>
+            <img src="./components/agents/profile/sage.png" />
+            <div>
+                <object data="./components/agents/abilities/sage/firstAbility.svg"></object>
+                <object data="./components/agents/abilities/sage/secondAbility.svg"></object>
+                <object data="./components/agents/abilities/sage/thirdAbility.svg"></object>
+                <object data="./components/agents/abilities/sage/fourthAbility.svg"></object>
+            </div>
+        </div>
+        
+        <div>
+            <div>
+                <h2>Basic</h2>
+                <h3>Slow Orb</h3>
+                <p>Cast out a radianite orb that breaks into a slowing field upon impact with the ground.</p>
+            </div>
+            <div>
+                <h2>Signature</h2>
+                <h3>Healing Orb</h3>
+                <p>Heal an ally or yourself to full health over a few seconds.</p>
+            </div>
+            <div>
+                <h2>Ultimate</h2>
+                <h3>Resurrection</h3>
+                <p>Target a friendly corpse. After a short delay, revive them with full health.</p>
+            </div>
+            <div>
+            </div>
+        </div>
+    </main>
+</body>
 </html>
