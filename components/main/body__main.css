@@ -1,0 +1,13 @@
+.body__main {
+  width: 2663px;
+  height: 1499px;
+  margin-left: 218px;
+  top: 428px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+/*# sourceMappingURL=body__main.css.map */

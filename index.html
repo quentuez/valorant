@@ -10,6 +10,41 @@
         @import "fonts/drukWide/drukWide.css";
         @import "fonts/montserrat/Montserrat.css";
         @import "styles/globals.css";
+
+        @import "components/figma/figma.css";
+        @import "components/figma/body__figma.css";
+
+        @import "components/figma/figma__logo/figma__logo.css";
+
+        @import "components/paragraph/paragraph.css";
+        @import "components/figma/figma__paragraph/figma__paragraph.css";
+
+        @import "components/header/header.css";
+        @import "components/header/body__header.css";
+
+        @import "components/main-logos/header__main-logos.css";
+
+        @import "components/main-logos/riot-games/main-logos__riot-games.css";
+
+        @import "components/main-logos/valorant/main-logos__valorant.css";
+
+        @import "components/unordered-list/header__unordered-list.css";
+        @import "components/unordered-list/unordered-list.css";
+
+        @import "components/navigation/navigation.css";
+        @import "components/navigation/header__navigation.css";
+
+        @import "components/main/main.css";
+        @import "components/main/body__main.css";
+
+        @import "components/heading1/heading1.css";
+        @import "components/heading1/main__heading1.css";
+
+        @import "components/heading2/heading2.css";
+        @import "components/heading2/main__heading2.css";
+
+        @import "components/heading3/heading3.css";
+        @import "components/heading3/main__heading3.css";
     </style>
     <title>
         Valorant - Agents page
@@ -17,39 +52,45 @@
 </head>
 
 <body>
-    <div>
-        <object data="./components/logos/figma.svg"></object>
-        <p>Free files</p>
+    <div class="figma body__figma">
+        <object class="logo figma__logo" data="./components/figma/figma__logo/logo.svg"></object>
+        <p class="paragraph figma__paragraph">Free files</p>
     </div>
 
-    <header>
-        <object data="./components/logos/riotGames.svg"></object>
-        <object data="./components/logos/valorant.svg"></object>
-        <nav>
-            <ul>
-                <li><a href="#">Game</a></li>
-                <li><a href="#">Champions</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Patch notes</a></li>
-                <li><a href="#">Discover</a></li>
-                <li><a href="#">Esports</a></li>
-                <li><a href="#">Universe</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Support</a></li>
+    <header class="header body__header">
+        <div class="main-logos header__main-logos">
+            <object class="riot-games main-logos__riot-games"
+                data="./components/main-logos/riot-games/riot-games.svg"></object>
+            <object class="riot-games main-logos__valorant"
+                data="./components/main-logos/valorant/valorant.svg"></object>
+        </div>
+
+        <nav class="navigation header__navigation">
+            <ul class="unordered-list header__unordered-list">
+                <li><a href="https://playvalorant.com/en-us/">Game</a></li>
+                <li><a href="https://playvalorant.com/en-us/">Champions</a></li>
+                <li><a href="https://playvalorant.com/en-us/">News</a></li>
+                <li><a href="https://playvalorant.com/en-us/">Patch notes</a></li>
+                <li><a href="https://playvalorant.com/en-us/">Discover</a></li>
+                <li><a href="https://playvalorant.com/en-us/">Esports</a></li>
+                <li><a href="https://playvalorant.com/en-us/">Universe</a></li>
+                <li><a href="https://playvalorant.com/en-us/">Shop</a></li>
+                <li><a href="https://playvalorant.com/en-us/">Support</a></li>
             </ul>
         </nav>
+
         <div>
             <img />
             <span>Unepicked</span>
         </div>
     </header>
 
-    <main>
-        <h1>Agents</h1>
+    <main class="main body__main">
+        <h1 class="heading1 main__heading1">Agents</h1>
 
         <div>
-            <h2>Phoenix</h2>
-            <h3>United Kingdom</h3>
+            <h2 class="heading2 main__heading2">Phoenix</h2>
+            <h3 class="heading3 main__heading3">United Kingdom</h3>
             <img src="./components/agents/profile/phoenix.png" />
             <div>
                 <object data="./components/agents/abilities/phoenix/firstAbility.svg"></object>
@@ -59,8 +100,8 @@
             </div>
         </div>
         <div>
-            <h2>Jett</h2>
-            <h3>South Korea</h3>
+            <h2 class="heading2 main__heading2">Jett</h2>
+            <h3 class="heading3 main__heading3">South Korea</h3>
             <img src="./components/agents/profile/jett.png" />
             <div>
                 <object data="./components/agents/abilities/jett/firstAbility.svg"></object>
@@ -70,8 +111,8 @@
             </div>
         </div>
         <div>
-            <h2>Sova</h2>
-            <h3>Russia</h3>
+            <h2 class="heading2 main__heading2">Sova</h2>
+            <h3 class="heading3 main__heading3">Russia</h3>
             <img src="./components/agents/profile/sova.png" />
             <div>
                 <object data="./components/agents/abilities/sova/firstAbility.svg"></object>
@@ -81,8 +122,8 @@
             </div>
         </div>
         <div>
-            <h2>Sage</h2>
-            <h3>China</h3>
+            <h2 class="heading2 main__heading2">Sage</h2>
+            <h3 class="heading3 main__heading3">China</h3>
             <img src="./components/agents/profile/sage.png" />
             <div>
                 <object data="./components/agents/abilities/sage/firstAbility.svg"></object>
@@ -91,7 +132,7 @@
                 <object data="./components/agents/abilities/sage/fourthAbility.svg"></object>
             </div>
         </div>
-        
+
         <div>
             <div>
                 <h2>Basic</h2>
@@ -113,4 +154,5 @@
         </div>
     </main>
 </body>
+
 </html>

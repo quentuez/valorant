@@ -1,0 +1,7 @@
+@use "../../styles/variables";
+
+.header {
+    background: variables.$grey-700;
+    border-radius: 50px 50px 0 0;
+    box-shadow: 0 0 10px variables.$black;
+}

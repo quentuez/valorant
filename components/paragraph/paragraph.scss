@@ -1,0 +1,11 @@
+@use "../../styles/variables";
+
+.paragraph {
+    color: variables.$grey-100;
+    font-family: variables.$primary-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+
+}

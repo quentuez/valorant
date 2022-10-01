@@ -1,0 +1,17 @@
+@use "../../styles/variables";
+
+.heading3 {
+    color: variables.$red;
+
+    font: {
+        family: variables.$secondary-font;
+        size: 24px;
+    }
+
+    letter-spacing: 0.1em;
+
+    text: {
+        align: center;
+        transform: uppercase;
+    }
+}

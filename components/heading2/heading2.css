@@ -1,0 +1,11 @@
+.heading2 {
+  font-family: "Druk Wide";
+  font-size: 72px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  -webkit-text-fill-color: transparent;
+}
+
+/*# sourceMappingURL=heading2.css.map */

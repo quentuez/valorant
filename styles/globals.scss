@@ -4,8 +4,17 @@ html,
 body {
     margin: 0;
     padding: 0;
+
     background: variables.$grey-700;
     font-family: variables.$primary-font;
+    height: 2323px;
+    width: 3846px;
+    width: variables.$wide-l;
+}
+
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 * {

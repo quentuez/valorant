@@ -1,15 +1,25 @@
 //Colors
 $black: rgba(0, 0, 0, 1);
-$grey-100: rgba(248, 248, 248, 1);
+$grey-100: rgba(248, 248, 248, 1); // #F8F8F8
 $grey-200: rgba(245, 244, 239, 1);
 $grey-300: rgba(239, 239, 239, 1);
 $grey-400: rgba(196, 196, 196, 1);
 $grey-500: rgba(80, 81, 85, 1);
 $grey-600: rgba(41, 44, 49, 1);
-$grey-700: rgba(31, 35, 38, 1);
-$red: rgba(255, 70, 86, 1);
-$white: rgba(255, 255, 255, 1);
+$grey-700: rgba(31, 35, 38, 1); // #1F2326
+$red: rgba(255, 70, 86, 1); // #FF4656
+$white: rgba(255, 255, 255, 1); // #FFFFFF
 
 //Font
 $primary-font: "Montserrat";
 $secondary-font: "Druk Wide";
+
+// Breakpoints
+$mobile-s: 320px;
+$mobile-m: 375px;
+$mobile-l: 425px;
+$tablet: 768px;
+$laptop: 1024px;
+$laptop-l: 1440px;
+$wide: 2560px;
+$wide-l: 3099px;
