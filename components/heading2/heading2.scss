@@ -1,6 +1,8 @@
 @use "../../styles/variables";
 
 .heading2 {
+    transition: 0.5s;
+
     font: {
         family: variables.$secondary-font;
         size: 72px;
@@ -13,6 +15,6 @@
         transform: uppercase;
     }
 
-    -webkit-text-stroke: 1px variables.$white;
+    -webkit-text-stroke: 2px variables.$white;
     -webkit-text-fill-color: transparent;
 }

@@ -1,0 +1,6 @@
+@use "../../styles/variables";
+
+.agent-image {
+    transition: 0.5s;
+    background-color: variables.$grey-700;
+}

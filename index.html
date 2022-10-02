@@ -7,44 +7,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         /*  sass --watch .:. */
-        @import "fonts/drukWide/drukWide.css";
-        @import "fonts/montserrat/Montserrat.css";
-        @import "styles/globals.css";
+        @import "./fonts/drukWide/drukWide.css";
+        @import "./fonts/montserrat/Montserrat.css";
+        @import "./styles/globals.css";
 
-        @import "components/figma/figma.css";
-        @import "components/figma/body__figma.css";
+        @import "./components/figma/figma.css";
+        @import "./components/figma/body__figma.css";
 
-        @import "components/figma/figma__logo/figma__logo.css";
+        @import "./components/figma/figma__logo/figma__logo.css";
 
-        @import "components/paragraph/paragraph.css";
-        @import "components/figma/figma__paragraph/figma__paragraph.css";
+        @import "./components/paragraph/paragraph.css";
+        @import "./components/figma/figma__paragraph/figma__paragraph.css";
 
-        @import "components/header/header.css";
-        @import "components/header/body__header.css";
+        @import "./components/header/header.css";
+        @import "./components/header/body__header.css";
 
-        @import "components/main-logos/header__main-logos.css";
+        @import "./components/main-logos/header__main-logos.css";
 
-        @import "components/main-logos/riot-games/main-logos__riot-games.css";
+        @import "./components/main-logos/riot-games/main-logos__riot-games.css";
 
-        @import "components/main-logos/valorant/main-logos__valorant.css";
+        @import "./components/main-logos/valorant/main-logos__valorant.css";
 
-        @import "components/unordered-list/header__unordered-list.css";
-        @import "components/unordered-list/unordered-list.css";
+        @import "./components/unordered-list/header__unordered-list.css";
+        @import "./components/unordered-list/unordered-list.css";
 
-        @import "components/navigation/navigation.css";
-        @import "components/navigation/header__navigation.css";
+        @import "./components/navigation/navigation.css";
+        @import "./components/navigation/header__navigation.css";
 
-        @import "components/main/main.css";
-        @import "components/main/body__main.css";
+        @import "./components/main/main.css";
+        @import "./components/main/body__main.css";
 
-        @import "components/heading1/heading1.css";
-        @import "components/heading1/main__heading1.css";
+        @import "./components/heading1/heading1.css";
+        @import "./components/heading1/main__heading1.css";
 
-        @import "components/heading2/heading2.css";
-        @import "components/heading2/main__heading2.css";
+        @import "./components/heading2/heading2.css";
+        @import "./components/heading2/main__heading2.css";
+        @import "./components/heading2/_hover/heading2_hover.css";
 
-        @import "components/heading3/heading3.css";
-        @import "components/heading3/main__heading3.css";
+        @import "./components/heading3/heading3.css";
+        @import "./components/heading3/main__heading3.css";
+
+        @import "./components/agent/agent.css";
+        @import "./components/agent/main__agent.css";
+
+        @import "./components/agent-image/agent-image.css";
+        @import "./components/agent-image/_hover/agent-image_hover.css";
+
+        @import "./components/abilities/abilities.css";
+        @import "./components/abilities/main__abilities.css";
+
+        @import "./components/icon/icon.css";
+        @import "./components/icon/abilities__icon.css";
+
+        @import "./components/icon/_phoenix/abilities__icon_phoenix_first-ability.css";
+        @import "./components/icon/_phoenix/abilities__icon_phoenix_second-ability.css";
+        @import "./components/icon/_phoenix/abilities__icon_phoenix_third-ability.css";
+        @import "./components/icon/_phoenix/abilities__icon_phoenix_fourth-ability.css";
+
+        @import "./components/icon/_jett/abilities__icon_jett_first-ability.css";
+        @import "./components/icon/_jett/abilities__icon_jett_second-ability.css";
+        @import "./components/icon/_jett/abilities__icon_jett_third-ability.css";
+        @import "./components/icon/_jett/abilities__icon_jett_fourth-ability.css";
+
+        @import "./components/icon/_sova/abilities__icon_sova_first-ability.css";
+        @import "./components/icon/_sova/abilities__icon_sova_second-ability.css";
+        @import "./components/icon/_sova/abilities__icon_sova_third-ability.css";
+        @import "./components/icon/_sova/abilities__icon_sova_fourth-ability.css";
+
+        @import "./components/icon/_sage/abilities__icon_sage_first-ability.css";
+        @import "./components/icon/_sage/abilities__icon_sage_second-ability.css";
+        @import "./components/icon/_sage/abilities__icon_sage_third-ability.css";
+        @import "./components/icon/_sage/abilities__icon_sage_fourth-ability.css";
     </style>
     <title>
         Valorant - Agents page
@@ -88,52 +121,68 @@
     <main class="main body__main">
         <h1 class="heading1 main__heading1">Agents</h1>
 
-        <div>
-            <h2 class="heading2 main__heading2">Phoenix</h2>
+        <div class="agent main__agent">
+            <h2 class="heading2 main__heading2 heading2_hover">Phoenix</h2>
             <h3 class="heading3 main__heading3">United Kingdom</h3>
-            <img src="./components/agents/profile/phoenix.png" />
-            <div>
-                <object data="./components/agents/abilities/phoenix/firstAbility.svg"></object>
-                <object data="./components/agents/abilities/phoenix/secondAbility.svg"></object>
-                <object data="./components/agents/abilities/phoenix/thirdAbility.svg"></object>
-                <object data="./components/agents/abilities/phoenix/fourthAbility.svg"></object>
+            <img class="agent-image main__agent-image agent-image_hover" src="./components/agent-image/phoenix.png" />
+            <div class="abilities main__abilities">
+                <object class="icon abilities__icon abilities__icon_phoenix_first-ability"
+                    data="./components/abilities/phoenix-first-ability.svg"></object>
+                <object class="icon abilities__icon abilities__icon_phoenix_second-ability"
+                    data="./components/abilities/phoenix-second-ability.svg"></object>
+                <object class="icon abilities__icon abilities__icon_phoenix_third-ability"
+                    data="./components/abilities/phoenix-third-ability.svg"></object>
+                <object class="icon abilities__icon abilities__icon_phoenix_fourth-ability"
+                    data="./components/abilities/phoenix-fourth-ability.svg"></object>
             </div>
         </div>
-        <div>
-            <h2 class="heading2 main__heading2">Jett</h2>
+        <div class="agent main__agent">
+            <h2 class="heading2 main__heading2 heading2_hover">Jett</h2>
             <h3 class="heading3 main__heading3">South Korea</h3>
-            <img src="./components/agents/profile/jett.png" />
-            <div>
-                <object data="./components/agents/abilities/jett/firstAbility.svg"></object>
-                <object data="./components/agents/abilities/jett/secondAbility.svg"></object>
-                <object data="./components/agents/abilities/jett/thirdAbility.svg"></object>
-                <object data="./components/agents/abilities/jett/fourthAbility.svg"></object>
+            <img class="agent-image main__agent-image agent-image_hover" src="./components/agent-image/jett.png" />
+            <div class="abilities main__abilities">
+                <object class="icon abilities__icon abilities__icon_jett_first-ability"
+                    data="./components/abilities/jett-first-ability.svg"></object>
+                <object class="icon abilities__icon abilities__icon_jett_second-ability"
+                    data="./components/abilities/jett-second-ability.svg"></object>
+                <object class="icon abilities__icon abilities__icon_jett_third-ability"
+                    data="./components/abilities/jett-third-ability.svg"></object>
+                <object class="icon abilities__icon abilities__icon_jett_fourth-ability"
+                    data="./components/abilities/jett-fourth-ability.svg"></object>
             </div>
         </div>
-        <div>
-            <h2 class="heading2 main__heading2">Sova</h2>
+        <div class="agent main__agent">
+            <h2 class="heading2 main__heading2 heading2_hover">Sova</h2>
             <h3 class="heading3 main__heading3">Russia</h3>
-            <img src="./components/agents/profile/sova.png" />
-            <div>
-                <object data="./components/agents/abilities/sova/firstAbility.svg"></object>
-                <object data="./components/agents/abilities/sova/secondAbility.svg"></object>
-                <object data="./components/agents/abilities/sova/thirdAbility.svg"></object>
-                <object data="./components/agents/abilities/sova/fourthAbility.svg"></object>
+            <img class="agent-image main__agent-image agent-image_hover" src="./components/agent-image/sova.png" />
+            <div class="abilities main__abilities">
+                <object class="icon abilities__icon abilities__icon_sova_first-ability"
+                    data="./components/abilities/sova-first-ability.svg"></object>
+                <object class="icon abilities__icon abilities__icon_sova_second-ability"
+                    data="./components/abilities/sova-second-ability.svg"></object>
+                <object class="icon abilities__icon abilities__icon_sova_third-ability"
+                    data="./components/abilities/sova-third-ability.svg"></object>
+                <object class="icon abilities__icon abilities__icon_sova_fourth-ability"
+                    data="./components/abilities/sova-fourth-ability.svg"></object>
             </div>
         </div>
-        <div>
-            <h2 class="heading2 main__heading2">Sage</h2>
+        <div class="agent main__agent">
+            <h2 class="heading2 main__heading2 heading2_hover">Sage</h2>
             <h3 class="heading3 main__heading3">China</h3>
-            <img src="./components/agents/profile/sage.png" />
-            <div>
-                <object data="./components/agents/abilities/sage/firstAbility.svg"></object>
-                <object data="./components/agents/abilities/sage/secondAbility.svg"></object>
-                <object data="./components/agents/abilities/sage/thirdAbility.svg"></object>
-                <object data="./components/agents/abilities/sage/fourthAbility.svg"></object>
+            <img class="agent-image main__agent-image agent-image_hover" src="./components/agent-image/sage.png" />
+            <div class="abilities main__abilities">
+                <object class="icon abilities__icon abilities__icon_sage_first-ability"
+                    data="./components/abilities/sage-first-ability.svg"></object>
+                <object class="icon abilities__icon abilities__icon_sage_second-ability"
+                    data="./components/abilities/sage-second-ability.svg"></object>
+                <object class="icon abilities__icon abilities__icon_sage_third-ability"
+                    data="./components/abilities/sage-third-ability.svg"></object>
+                <object class="icon abilities__icon  abilities__icon_sage_fourth-ability"
+                    data="./components/abilities/sage-fourth-ability.svg"></object>
             </div>
         </div>
 
-        <div>
+        <div class="overview-abilities">
             <div>
                 <h2>Basic</h2>
                 <h3>Slow Orb</h3>

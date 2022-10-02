@@ -1,0 +1,6 @@
+.heading2_hover:hover {
+  transition: 0.5s;
+  -webkit-text-stroke: 2px rgb(31, 35, 38);
+}
+
+/*# sourceMappingURL=heading2_hover.css.map */

@@ -1,0 +1,8 @@
+@use "../../../styles/variables";
+
+.heading2_hover {
+    &:hover {
+        transition: 0.5s;
+        -webkit-text-stroke: 2px variables.$grey-700;
+    }
+}

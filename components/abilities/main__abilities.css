@@ -1,0 +1,10 @@
+.main__abilities {
+  height: 110px;
+  width: 440px;
+  transform: translate(31px, -35px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*# sourceMappingURL=main__abilities.css.map */
