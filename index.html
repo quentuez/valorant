@@ -4,7 +4,13 @@
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="author" content="Дмитрий Клименков">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="./favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+
     <style>
         /*  sass --watch .:. */
         @import "./fonts/drukWide/drukWide.css";
@@ -58,6 +64,7 @@
 
         @import "./components/icon/icon.css";
         @import "./components/icon/abilities__icon.css";
+        @import "./components/icon/ability-preview__icon.css";
 
         @import "./components/icon/_phoenix/abilities__icon_phoenix_first-ability.css";
         @import "./components/icon/_phoenix/abilities__icon_phoenix_second-ability.css";
@@ -78,6 +85,21 @@
         @import "./components/icon/_sage/abilities__icon_sage_second-ability.css";
         @import "./components/icon/_sage/abilities__icon_sage_third-ability.css";
         @import "./components/icon/_sage/abilities__icon_sage_fourth-ability.css";
+
+        @import "./components/overview-abilities/overview-abilities.css";
+        @import "./components/overview-abilities/main__overview-abilities.css";
+
+        @import "./components/ability-preview/ability-preview.css";
+        @import "./components/ability-preview/main__ability-preview.css";
+
+        @import "./components/ability-heading2/ability-heading2.css";
+        @import "./components/ability-heading2/main__ability-heading2.css";
+
+        @import "./components/ability-heading3/ability-heading3.css";
+        @import "./components/ability-heading3/main__ability-heading3.css";
+
+        @import "./components/ability-paragraph/ability-paragraph.css";
+        @import "./components/ability-paragraph/main__ability-paragraph.css";
     </style>
     <title>
         Valorant - Agents page
@@ -126,13 +148,13 @@
             <h3 class="heading3 main__heading3">United Kingdom</h3>
             <img class="agent-image main__agent-image agent-image_hover" src="./components/agent-image/phoenix.png" />
             <div class="abilities main__abilities">
-                <object class="icon abilities__icon abilities__icon_phoenix_first-ability"
+                <object class="abilities__icon abilities__icon_phoenix_first-ability"
                     data="./components/abilities/phoenix-first-ability.svg"></object>
-                <object class="icon abilities__icon abilities__icon_phoenix_second-ability"
+                <object class="abilities__icon abilities__icon_phoenix_second-ability"
                     data="./components/abilities/phoenix-second-ability.svg"></object>
-                <object class="icon abilities__icon abilities__icon_phoenix_third-ability"
+                <object class=" abilities__icon abilities__icon_phoenix_third-ability"
                     data="./components/abilities/phoenix-third-ability.svg"></object>
-                <object class="icon abilities__icon abilities__icon_phoenix_fourth-ability"
+                <object class=" abilities__icon abilities__icon_phoenix_fourth-ability"
                     data="./components/abilities/phoenix-fourth-ability.svg"></object>
             </div>
         </div>
@@ -141,13 +163,13 @@
             <h3 class="heading3 main__heading3">South Korea</h3>
             <img class="agent-image main__agent-image agent-image_hover" src="./components/agent-image/jett.png" />
             <div class="abilities main__abilities">
-                <object class="icon abilities__icon abilities__icon_jett_first-ability"
+                <object class=" abilities__icon abilities__icon_jett_first-ability"
                     data="./components/abilities/jett-first-ability.svg"></object>
-                <object class="icon abilities__icon abilities__icon_jett_second-ability"
+                <object class=" abilities__icon abilities__icon_jett_second-ability"
                     data="./components/abilities/jett-second-ability.svg"></object>
-                <object class="icon abilities__icon abilities__icon_jett_third-ability"
+                <object class="abilities__icon abilities__icon_jett_third-ability"
                     data="./components/abilities/jett-third-ability.svg"></object>
-                <object class="icon abilities__icon abilities__icon_jett_fourth-ability"
+                <object class="abilities__icon abilities__icon_jett_fourth-ability"
                     data="./components/abilities/jett-fourth-ability.svg"></object>
             </div>
         </div>
@@ -156,13 +178,13 @@
             <h3 class="heading3 main__heading3">Russia</h3>
             <img class="agent-image main__agent-image agent-image_hover" src="./components/agent-image/sova.png" />
             <div class="abilities main__abilities">
-                <object class="icon abilities__icon abilities__icon_sova_first-ability"
+                <object class="abilities__icon abilities__icon_sova_first-ability"
                     data="./components/abilities/sova-first-ability.svg"></object>
-                <object class="icon abilities__icon abilities__icon_sova_second-ability"
+                <object class="abilities__icon abilities__icon_sova_second-ability"
                     data="./components/abilities/sova-second-ability.svg"></object>
-                <object class="icon abilities__icon abilities__icon_sova_third-ability"
+                <object class="abilities__icon abilities__icon_sova_third-ability"
                     data="./components/abilities/sova-third-ability.svg"></object>
-                <object class="icon abilities__icon abilities__icon_sova_fourth-ability"
+                <object class="abilities__icon abilities__icon_sova_fourth-ability"
                     data="./components/abilities/sova-fourth-ability.svg"></object>
             </div>
         </div>
@@ -171,32 +193,41 @@
             <h3 class="heading3 main__heading3">China</h3>
             <img class="agent-image main__agent-image agent-image_hover" src="./components/agent-image/sage.png" />
             <div class="abilities main__abilities">
-                <object class="icon abilities__icon abilities__icon_sage_first-ability"
+                <object class="abilities__icon abilities__icon_sage_first-ability"
                     data="./components/abilities/sage-first-ability.svg"></object>
-                <object class="icon abilities__icon abilities__icon_sage_second-ability"
+                <object class="abilities__icon abilities__icon_sage_second-ability"
                     data="./components/abilities/sage-second-ability.svg"></object>
-                <object class="icon abilities__icon abilities__icon_sage_third-ability"
+                <object class="abilities__icon abilities__icon_sage_third-ability"
                     data="./components/abilities/sage-third-ability.svg"></object>
-                <object class="icon abilities__icon  abilities__icon_sage_fourth-ability"
+                <object class="abilities__icon  abilities__icon_sage_fourth-ability"
                     data="./components/abilities/sage-fourth-ability.svg"></object>
             </div>
         </div>
 
-        <div class="overview-abilities">
-            <div>
-                <h2>Basic</h2>
-                <h3>Slow Orb</h3>
-                <p>Cast out a radianite orb that breaks into a slowing field upon impact with the ground.</p>
+        <div class="overview-abilities main__overview-abilities">
+            <div class="ability-preview main__ability-preview">
+                <h2 class="ability-heading2 main__ability-heading2">Basic</h2>
+                <h3 class="ability-heading3 main__ability-heading3">Slow Orb</h3>
+                <p class="ability-paragraph main__ability-paragraph">Cast out a radianite orb that breaks into a slowing
+                    field upon impact with the ground.</p>
+                <object class="icon ability-preview__icon"
+                    data="./components/abilities/sage-first-ability.svg"></object>
             </div>
-            <div>
-                <h2>Signature</h2>
-                <h3>Healing Orb</h3>
-                <p>Heal an ally or yourself to full health over a few seconds.</p>
+            <div class="ability-preview main__ability-preview">
+                <h2 class="ability-heading2 main__ability-heading2">Signature</h2>
+                <h3 class="ability-heading3 main__ability-heading3">Healing Orb</h3>
+                <p class="ability-paragraph main__ability-paragraph">Heal an ally or yourself to full health over a few
+                    seconds.</p>
+                <object class="icon ability-preview__icon"
+                    data="./components/abilities/sage-fourth-ability.svg"></object>
             </div>
-            <div>
-                <h2>Ultimate</h2>
-                <h3>Resurrection</h3>
-                <p>Target a friendly corpse. After a short delay, revive them with full health.</p>
+            <div class="ability-preview main__ability-preview">
+                <h2 class="ability-heading2 main__ability-heading2">Ultimate</h2>
+                <h3 class="ability-heading3 main__ability-heading3">Resurrection</h3>
+                <p class="ability-paragraph main__ability-paragraph">Target a friendly corpse. After a short delay,
+                    revive them with full health.</p>
+                <object class="icon ability-preview__icon"
+                    data="./components/abilities/sage-third-ability.svg"></object>
             </div>
             <div>
             </div>

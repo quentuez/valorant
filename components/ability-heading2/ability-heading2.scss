@@ -1,0 +1,11 @@
+@use "../../styles/variables";
+
+.ability-heading2 {
+    font-family: variables.$secondary-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 52px;
+    text-transform: uppercase;
+    color: variables.$grey-400;
+}

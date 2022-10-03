@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"icon.css"}
+{"version":3,"sourceRoot":"","sources":["icon.scss","../../styles/_variables.scss"],"names":[],"mappings":"AAEA;EACG,MCKQ","file":"icon.css"}

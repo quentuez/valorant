@@ -1,0 +1,10 @@
+@use "../../styles/variables";
+
+.ability-heading3 {
+    font-family: variables.$secondary-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+    color: variables.$black;
+}

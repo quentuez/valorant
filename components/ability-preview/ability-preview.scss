@@ -1,0 +1,6 @@
+@use "../../styles/variables";
+
+.ability-preview {
+    background-color: variables.$grey-100;
+    border: 1px solid variables.$black;
+}

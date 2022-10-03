@@ -1,0 +1,9 @@
+.main__overview-abilities {
+  display: grid;
+  grid-template-columns: 804px 804px 804px 350px;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+/*# sourceMappingURL=main__overview-abilities.css.map */

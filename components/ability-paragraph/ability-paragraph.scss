@@ -1,0 +1,11 @@
+@use "../../styles/variables";
+
+.ability-paragraph {
+    font-family: variables.$primary-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    color: variables.$grey-700;
+}
