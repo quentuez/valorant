@@ -1,0 +1,7 @@
+@use "../../../styles/variables";
+@use "../../../mixins/circle";
+
+.body__circle_position_seven {
+    @include circle.drawCircle(1443px, 1443px, variables.$grey-600);
+    @include circle.positioningCircle(2018px, 1392px);
+}

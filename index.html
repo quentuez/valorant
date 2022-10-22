@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <!-- Project is based on https://www.figma.com/file/mc4NyQ8AYUV7KjImsy5cVY -->
+<!-- "sass --watch .:." - convert .scss to .css -->
 
 <head>
     <meta charset="utf-8">
@@ -9,8 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
         content="Website created to present Valorant: a 5v5 character-based tactical FPS where precise gunplay meets unique agent abilities.">
-    <link rel="apple-touch-icon" href="./favicon.ico">
-    <link rel="icon" type="image/x-icon" href="./favicon.ico">
 
     <!-- third-generation iPad with high-resolution Retina display -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./favicon144.png">
@@ -24,15 +23,56 @@
     <link rel="icon" href="./favicon32.png">
 
     <style>
-        /*  sass --watch .:. */
+        /* Font is taken from here https://8font.com/druk-wide-bold/ */
         @import "./fonts/drukWide/drukWide.css";
+        /* Font is taken from here https://www.fontsquirrel.com/fonts/montserrat */
         @import "./fonts/montserrat/Montserrat.css";
         @import "./styles/globals.css";
+
+        @import "./mixins/circle.css";
+        @import "./components/circle/circle.css";
+        @import "./components/circle/body__circle.css";
+        @import "./components/circle/_position/body__circle_position_one.css";
+        @import "./components/circle/_position/body__circle_position_two.css";
+        @import "./components/circle/_position/body__circle_position_three.css";
+        @import "./components/circle/_position/body__circle_position_four.css";
+        @import "./components/circle/_position/body__circle_position_five.css";
+        @import "./components/circle/_position/body__circle_position_six.css";
+        @import "./components/circle/_position/body__circle_position_seven.css";
+
+        @import "./mixins/square.css";
+        @import "./components/square/square.css";
+        @import "./components/square/body__square.css";
+        @import "./components/square/_position/body__square_position_one.css";
+        @import "./components/square/_position/body__square_position_two.css";
+        @import "./components/square/_position/body__square_position_three.css";
+        @import "./components/square/_position/body__square_position_four.css";
+        @import "./components/square/_position/body__square_position_five.css";
+        @import "./components/square/_position/body__square_position_six.css";
+        @import "./components/square/_position/body__square_position_seven.css";
+        @import "./components/square/_position/body__square_position_eight.css";
+        @import "./components/square/_position/body__square_position_nine.css";
+        @import "./components/square/_position/body__square_position_ten.css";
+        @import "./components/square/_position/body__square_position_eleven.css";
+        @import "./components/square/_position/body__square_position_twelve.css";
+        @import "./components/square/_position/body__square_position_thirteen.css";
+        @import "./components/square/_position/body__square_position_fourteen.css";
+        @import "./components/square/_position/body__square_position_fiveteen.css";
+        @import "./components/square/_position/body__square_position_sixteen.css";
+        @import "./components/square/_position/body__square_position_seventeen.css";
+        @import "./components/square/_position/body__square_position_eighteen.css";
+        @import "./components/square/_position/body__square_position_nineteen.css";
+        @import "./components/square/_position/body__square_position_twenty.css";
+        @import "./components/square/_position/body__square_position_twenty-one.css";
+        @import "./components/square/_position/body__square_position_twenty-two.css";
+        @import "./components/square/_position/body__square_position_twenty-three.css";
 
         @import "./components/figma/figma.css";
         @import "./components/figma/body__figma.css";
 
         @import "./components/figma/figma__logo/figma__logo.css";
+
+        @import "./components/anchor/anchor.css";
 
         @import "./components/paragraph/paragraph.css";
         @import "./components/figma/figma__paragraph/figma__paragraph.css";
@@ -112,6 +152,9 @@
 
         @import "./components/ability-paragraph/ability-paragraph.css";
         @import "./components/ability-paragraph/main__ability-paragraph.css";
+
+        @import "./components/footer/footer.css";
+        @import "./components/footer/main__footer.css";
     </style>
     <title>
         Valorant - Agents page
@@ -119,6 +162,40 @@
 </head>
 
 <body>
+    <!-- Circles -->
+    <div class="circle body__circle body__circle_position_one"></div>
+    <div class="circle body__circle body__circle_position_two"></div>
+    <div class="circle body__circle body__circle_position_three"></div>
+    <div class="circle body__circle body__circle_position_four"></div>
+    <div class="circle body__circle body__circle_position_five"></div>
+    <div class="circle body__circle body__circle_position_six"></div>
+    <div class="circle body__circle body__circle_position_seven"></div>
+
+    <!-- Squares -->
+    <div class="square body__square body__square_position_one"></div>
+    <div class="square body__square body__square_position_two"></div>
+    <div class="square body__square body__square_position_three"></div>
+    <div class="square body__square body__square_position_four"></div>
+    <div class="square body__square body__square_position_five"></div>
+    <div class="square body__square body__square_position_six"></div>
+    <div class="square body__square body__square_position_seven"></div>
+    <div class="square body__square body__square_position_eight"></div>
+    <div class="square body__square body__square_position_nine"></div>
+    <div class="square body__square body__square_position_ten"></div>
+    <div class="square body__square body__square_position_eleven"></div>
+    <div class="square body__square body__square_position_twelve"></div>
+    <div class="square body__square body__square_position_thirteen"></div>
+    <div class="square body__square body__square_position_fourteen"></div>
+    <div class="square body__square body__square_position_fiveteen"></div>
+    <div class="square body__square body__square_position_sixteen"></div>
+    <div class="square body__square body__square_position_seventeen"></div>
+    <div class="square body__square body__square_position_eighteen"></div>
+    <div class="square body__square body__square_position_nineteen"></div>
+    <div class="square body__square body__square_position_twenty"></div>
+    <div class="square body__square body__square_position_twenty-one"></div>
+    <div class="square body__square body__square_position_twenty-two"></div>
+    <div class="square body__square body__square_position_twenty-three"></div>
+
     <div class="figma body__figma">
         <object class="logo figma__logo" data="./components/figma/figma__logo/logo.svg"></object>
         <p class="paragraph figma__paragraph">Free files</p>
@@ -134,15 +211,15 @@
 
         <nav class="navigation header__navigation">
             <ul class="unordered-list header__unordered-list">
-                <li><a href="https://playvalorant.com/en-us/">Game</a></li>
-                <li><a href="https://playvalorant.com/en-us/">Champions</a></li>
-                <li><a href="https://playvalorant.com/en-us/">News</a></li>
-                <li><a href="https://playvalorant.com/en-us/">Patch notes</a></li>
-                <li><a href="https://playvalorant.com/en-us/">Discover</a></li>
-                <li><a href="https://playvalorant.com/en-us/">Esports</a></li>
-                <li><a href="https://playvalorant.com/en-us/">Universe</a></li>
-                <li><a href="https://playvalorant.com/en-us/">Shop</a></li>
-                <li><a href="https://playvalorant.com/en-us/">Support</a></li>
+                <li><a class="anchor" href="https://playvalorant.com/en-us/">Game</a></li>
+                <li><a class="anchor" href="https://playvalorant.com/en-us/agents/">Champions</a></li>
+                <li><a class="anchor" href="https://playvalorant.com/en-us/news/">News</a></li>
+                <li><a class="anchor" href="https://playvalorant.com/en-us/news/game-updates/">Patch notes</a></li>
+                <li><a class="anchor" href="https://playvalorant.com/en-us/maps/">Discover</a></li>
+                <li><a class="anchor" href="https://valorantesports.com/">Esports</a></li>
+                <li><a class="anchor" href="https://valorant-lore.fandom.com/wiki/VALORANT_universe">Universe</a></li>
+                <li><a class="anchor" href="https://valorantstore.net/">Shop</a></li>
+                <li><a class="anchor" href="https://support-valorant.riotgames.com/hc/en-us/">Support</a></li>
             </ul>
         </nav>
 
@@ -244,6 +321,9 @@
             <div>
             </div>
         </div>
+
+        <footer class="footer main__footer">
+        </footer>
     </main>
 </body>
 

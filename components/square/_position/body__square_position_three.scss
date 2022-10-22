@@ -1,0 +1,7 @@
+@use "../../../styles/variables";
+@use "../../../mixins/square";
+
+.body__square_position_three {
+    @include square.drawSquare(8px, 8px, variables.$grey-700);
+    @include square.positioningSquare(607px, 518px, 0.5);
+}

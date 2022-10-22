@@ -1,0 +1,10 @@
+@use "../../styles/variables";
+
+.anchor {
+    color: variables.$white;
+    text-decoration: none;
+}
+
+.anchor:hover {
+    text-decoration: underline;
+}

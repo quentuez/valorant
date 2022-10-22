@@ -1,0 +1,12 @@
+.body__square_position_ten {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(31, 35, 38);
+  position: absolute;
+  opacity: 0.5;
+  z-index: 3;
+  left: 1187px;
+  top: 1519px;
+}
+
+/*# sourceMappingURL=body__square_position_ten.css.map */

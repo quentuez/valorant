@@ -1,0 +1,13 @@
+@mixin drawSquare($width, $height, $color) {
+    width: $width;
+    height: $height;
+    background-color: $color;
+}
+
+@mixin positioningSquare($left, $top, $opacity) {
+    position: absolute;
+    opacity: $opacity;
+    z-index: 3;
+    left: $left;
+    top: $top;
+}

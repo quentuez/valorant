@@ -1,0 +1,7 @@
+@use "../../styles/variables";
+
+.footer {
+    background: variables.$grey-100;
+    border-radius: 0 0 50px 50px;
+    box-shadow: 0 0 10px variables.$black;
+}

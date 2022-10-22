@@ -1,0 +1,11 @@
+@mixin drawCircle($width, $height, $color) {
+    width: $width;
+    height: $height;
+    background-color: $color;
+}
+
+@mixin positioningCircle($left, $top) {
+    position: absolute;
+    left: $left;
+    top: $top;
+}

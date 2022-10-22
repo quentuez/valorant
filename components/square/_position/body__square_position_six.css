@@ -1,0 +1,12 @@
+.body__square_position_six {
+  width: 80px;
+  height: 8px;
+  background-color: rgb(31, 35, 38);
+  position: absolute;
+  opacity: 0.5;
+  z-index: 3;
+  left: 320px;
+  top: 1586px;
+}
+
+/*# sourceMappingURL=body__square_position_six.css.map */
