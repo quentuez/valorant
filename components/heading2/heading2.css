@@ -2,7 +2,7 @@
   transition: 0.5s;
   font-family: "Druk Wide";
   font-size: 72px;
-  letter-spacing: 0.1em;
+  letter-spacing: 4px;
   text-align: center;
   text-transform: uppercase;
   -webkit-text-stroke: 2px rgb(255, 255, 255);

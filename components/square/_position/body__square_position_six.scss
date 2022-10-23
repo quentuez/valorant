@@ -3,5 +3,5 @@
 
 .body__square_position_six {
     @include square.drawSquare(80px, 8px, variables.$grey-700);
-    @include square.positioningSquare(320px, 1586px, 0.5);
+    @include square.positioningSquare(318px, 1536px, 0.5);
 }

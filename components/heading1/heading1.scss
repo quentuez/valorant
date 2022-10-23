@@ -6,13 +6,12 @@
         size: 156px;
     }
 
-    letter-spacing: 0.1em;
+    letter-spacing: 9px;
 
     text: {
-        align: center;
         transform: uppercase;
     }
 
-    -webkit-text-stroke: 1px variables.$white;
+    -webkit-text-stroke: 2px variables.$white;
     -webkit-text-fill-color: transparent;
 }

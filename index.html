@@ -72,6 +72,18 @@
 
         @import "./components/anchor/anchor.css";
 
+        @import "./components/arrow/arrow.css";
+        @import "./components/arrow/header__arrow.css";
+        @import "./components/arrow/user__arrow.css";
+
+        @import "./components/user/header__user.css";
+
+        @import "./components/avatar/avatar.css";
+        @import "./components/avatar/header__avatar.css";
+
+        @import "./components/span/span.css";
+        @import "./components/span/header__span.css";
+
         @import "./components/paragraph/paragraph.css";
         @import "./components/figma/figma__paragraph/figma__paragraph.css";
 
@@ -107,6 +119,7 @@
         @import "./components/agent/main__agent.css";
 
         @import "./components/agent-image/agent-image.css";
+        @import "./components/agent-image/main__agent-image.css";
         @import "./components/agent-image/_hover/agent-image_hover.css";
 
         @import "./components/abilities/abilities.css";
@@ -211,9 +224,15 @@
             <ul class="unordered-list header__unordered-list">
                 <li><a class="anchor" href="https://playvalorant.com/en-us/">Game</a></li>
                 <li><a class="anchor" href="https://playvalorant.com/en-us/agents/">Champions</a></li>
-                <li><a class="anchor" href="https://playvalorant.com/en-us/news/">News</a></li>
+                <li>
+                    <a class="anchor" href="https://playvalorant.com/en-us/news/">News</a>
+                    <object class="arrow header__arrow" data="./components/arrow/arrow.svg"></object>
+                </li>
                 <li><a class="anchor" href="https://playvalorant.com/en-us/news/game-updates/">Patch notes</a></li>
-                <li><a class="anchor" href="https://playvalorant.com/en-us/maps/">Discover</a></li>
+                <li>
+                    <a class="anchor" href="https://playvalorant.com/en-us/maps/">Discover</a>
+                    <object class="arrow header__arrow" data="./components/arrow/arrow.svg"></object>
+                </li>
                 <li><a class="anchor" href="https://valorantesports.com/">Esports</a></li>
                 <li><a class="anchor" href="https://valorant-lore.fandom.com/wiki/VALORANT_universe">Universe</a></li>
                 <li><a class="anchor" href="https://valorantstore.net/">Shop</a></li>
@@ -221,9 +240,10 @@
             </ul>
         </nav>
 
-        <div>
-            <img />
-            <span>Unepicked</span>
+        <div class="user header__user">
+            <object class="avatar header__avatar" data="./components/avatar/avatar.svg"></object>
+            <span class="span header__span">Unepicked</span>
+            <object class="arrow user__arrow" data="./components/arrow/arrow.svg"></object>
         </div>
     </header>
 

@@ -3,5 +3,5 @@
 
 .body__square_position_twenty {
     @include square.drawSquare(40px, 40px, variables.$grey-700);
-    @include square.positioningSquare(2788px, 1604px, 0.5);
+    @include square.positioningSquare(2788px, 1554px, 0.5);
 }
