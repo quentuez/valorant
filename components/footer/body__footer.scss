@@ -3,65 +3,60 @@
 $width: 2660px;
 $marginLeft: 212px;
 
-.body__main {
-    height: 1499px;
-    top: 428px;
-    display: grid;
-    grid-template-columns: 504px 584px 584px 584px 584px;
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    z-index: 1;
+.body__footer {
     position: absolute;
+    height: 132px;
+    left: 0;
+    top: 1459px;
+    z-index: 2;
     width: $width;
     margin-left: $marginLeft;
 }
 
-
 @media (max-width: variables.$wide) {
-    .body__main {
+    .body__footer {
         width: ($width/variables.$wide-l)*variables.$wide;
         margin-left: ($marginLeft/variables.$wide-l)*variables.$wide;
     }
 }
 
 @media (max-width: variables.$laptop-l) {
-    .body__main {
+    .body__footer {
         width: ($width/variables.$wide-l)*variables.$laptop-l;
         margin-left: ($marginLeft/variables.$wide-l)*variables.$laptop-l;
     }
 }
 
 @media (max-width: variables.$laptop) {
-    .body__main {
+    .body__footer {
         width: ($width/variables.$wide-l)*variables.$laptop;
         margin-left: ($marginLeft/variables.$wide-l)*variables.$laptop;
     }
 }
 
 @media (max-width: variables.$tablet) {
-    .body__main {
+    .body__footer {
         width: ($width/variables.$wide-l)*variables.$tablet;
         margin-left: ($marginLeft/variables.$wide-l)*variables.$tablet;
     }
 }
 
 @media (max-width: variables.$mobile-l) {
-    .body__main {
+    .body__footer {
         width: ($width/variables.$wide-l)*variables.$mobile-l;
         margin-left: ($marginLeft/variables.$wide-l)*variables.$mobile-l;
     }
 }
 
 @media (max-width: variables.$mobile-m) {
-    .body__main {
+    .body__footer {
         width: ($width/variables.$wide-l)*variables.$mobile-m;
         margin-left: ($marginLeft/variables.$wide-l)*variables.$mobile-m;
     }
 }
 
 @media (max-width: variables.$mobile-s) {
-    .body__main {
+    .body__footer {
         width: ($width/variables.$wide-l)*variables.$mobile-s;
         margin-left: ($marginLeft/variables.$wide-l)*variables.$mobile-s;
     }

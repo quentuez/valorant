@@ -1,12 +1,64 @@
 @use "../../styles/variables";
 
+$width: 2660px;
+$marginLeft: 212px;
+
 .body__header {
-    width: 2660px;
     height: 132px;
-    margin-left: 212px;
     margin-top: 124px;
     display: flex;
     flex-direction: row;
     z-index: 2;
     position: relative;
+    width: $width;
+    margin-left: $marginLeft;
+}
+
+@media (max-width: variables.$wide) {
+    .body__header {
+        width: ($width/variables.$wide-l)*variables.$wide;
+        margin-left: ($marginLeft/variables.$wide-l)*variables.$wide;
+    }
+}
+
+@media (max-width: variables.$laptop-l) {
+    .body__header {
+        width: ($width/variables.$wide-l)*variables.$laptop-l;
+        margin-left: ($marginLeft/variables.$wide-l)*variables.$laptop-l;
+    }
+}
+
+@media (max-width: variables.$laptop) {
+    .body__header {
+        width: ($width/variables.$wide-l)*variables.$laptop;
+        margin-left: ($marginLeft/variables.$wide-l)*variables.$laptop;
+    }
+}
+
+@media (max-width: variables.$tablet) {
+    .body__header {
+        width: ($width/variables.$wide-l)*variables.$tablet;
+        margin-left: ($marginLeft/variables.$wide-l)*variables.$tablet;
+    }
+}
+
+@media (max-width: variables.$mobile-l) {
+    .body__header {
+        width: ($width/variables.$wide-l)*variables.$mobile-l;
+        margin-left: ($marginLeft/variables.$wide-l)*variables.$mobile-l;
+    }
+}
+
+@media (max-width: variables.$mobile-m) {
+    .body__header {
+        width: ($width/variables.$wide-l)*variables.$mobile-m;
+        margin-left: ($marginLeft/variables.$wide-l)*variables.$mobile-m;
+    }
+}
+
+@media (max-width: variables.$mobile-s) {
+    .body__header {
+        width: ($width/variables.$wide-l)*variables.$mobile-s;
+        margin-left: ($marginLeft/variables.$wide-l)*variables.$mobile-s;
+    }
 }
