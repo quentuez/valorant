@@ -7,17 +7,10 @@ $marginLeft: 212px;
     position: absolute;
     height: 132px;
     left: 0;
-    top: 1459px;
-    z-index: 2;
+    top: 1887px;
+    z-index: 0;
     width: $width;
     margin-left: $marginLeft;
-}
-
-@media (max-width: variables.$wide) {
-    .body__footer {
-        width: ($width/variables.$wide-l)*variables.$wide;
-        margin-left: ($marginLeft/variables.$wide-l)*variables.$wide;
-    }
 }
 
 @media (max-width: variables.$laptop-l) {

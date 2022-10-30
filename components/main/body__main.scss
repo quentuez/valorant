@@ -7,8 +7,6 @@ $marginLeft: 212px;
     height: 1499px;
     top: 428px;
     display: grid;
-    grid-template-columns: 504px 584px 584px 584px 584px;
-    grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     z-index: 1;
@@ -22,6 +20,8 @@ $marginLeft: 212px;
     .body__main {
         width: ($width/variables.$wide-l)*variables.$wide;
         margin-left: ($marginLeft/variables.$wide-l)*variables.$wide;
+        grid-template-columns: 504px 584px 584px 584px 584px;
+        grid-template-rows: repeat(5, 1fr);
     }
 }
 
@@ -29,6 +29,8 @@ $marginLeft: 212px;
     .body__main {
         width: ($width/variables.$wide-l)*variables.$laptop-l;
         margin-left: ($marginLeft/variables.$wide-l)*variables.$laptop-l;
+        grid-template-columns: 504px 584px;
+        grid-template-rows: 1fr 1fr;
     }
 }
 

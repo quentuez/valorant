@@ -2,18 +2,12 @@
   position: absolute;
   height: 132px;
   left: 0;
-  top: 1459px;
-  z-index: 2;
+  top: 1887px;
+  z-index: 0;
   width: 2660px;
   margin-left: 212px;
 }
 
-@media (max-width: 2560px) {
-  .body__footer {
-    width: 2197.3539851565px;
-    margin-left: 175.1274604711px;
-  }
-}
 @media (max-width: 1440px) {
   .body__footer {
     width: 1236.0116166505px;

@@ -14,13 +14,6 @@ $marginLeft: 212px;
     margin-left: $marginLeft;
 }
 
-@media (max-width: variables.$wide) {
-    .body__header {
-        width: ($width/variables.$wide-l)*variables.$wide;
-        margin-left: ($marginLeft/variables.$wide-l)*variables.$wide;
-    }
-}
-
 @media (max-width: variables.$laptop-l) {
     .body__header {
         width: ($width/variables.$wide-l)*variables.$laptop-l;

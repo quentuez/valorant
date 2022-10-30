@@ -9,12 +9,6 @@
   margin-left: 212px;
 }
 
-@media (max-width: 2560px) {
-  .body__header {
-    width: 2197.3539851565px;
-    margin-left: 175.1274604711px;
-  }
-}
 @media (max-width: 1440px) {
   .body__header {
     width: 1236.0116166505px;

@@ -2,8 +2,6 @@
   height: 1499px;
   top: 428px;
   display: grid;
-  grid-template-columns: 504px 584px 584px 584px 584px;
-  grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   z-index: 1;
@@ -16,12 +14,16 @@
   .body__main {
     width: 2197.3539851565px;
     margin-left: 175.1274604711px;
+    grid-template-columns: 504px 584px 584px 584px 584px;
+    grid-template-rows: repeat(5, 1fr);
   }
 }
 @media (max-width: 1440px) {
   .body__main {
     width: 1236.0116166505px;
     margin-left: 98.509196515px;
+    grid-template-columns: 504px 584px;
+    grid-template-rows: 1fr 1fr;
   }
 }
 @media (max-width: 1024px) {
