@@ -12,14 +12,19 @@ $marginLeft: 212px;
     z-index: 1;
     position: absolute;
     width: $width;
-    margin-left: $marginLeft;
+
+}
+
+@media (max-width: variables.$wide-l) {
+    .body__main {
+        margin-left: $marginLeft;  grid-template-columns: 504px 584px 584px 584px 584px;
+        grid-template-rows: repeat(5, 1fr);
+    }
 }
 
 
 @media (max-width: variables.$wide) {
     .body__main {
-        width: ($width/variables.$wide-l)*variables.$wide;
-        margin-left: ($marginLeft/variables.$wide-l)*variables.$wide;
         grid-template-columns: 504px 584px 584px 584px 584px;
         grid-template-rows: repeat(5, 1fr);
     }
